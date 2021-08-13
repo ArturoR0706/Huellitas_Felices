@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-dark bg-dark" >
+            <ul class="nav justify-content-center" .justify-content-end:>  
+                <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Propietarios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="propietarios_crear.php">Crear</a></li>
+                        <li><a class="dropdown-item" href="ver_propietarios.php">Ver propietarios</a></li>
+                        
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Perros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="formulario_perro.php">Crear</a></li>
+                            <li><a class="dropdown-item" href="ver_perros.php">Ver perros</a></li>
+                            
+                            </ul>
+                          </li>
+                        
+                      <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="servicios_crear.php">Añadir servicio</a></li>
+                              <li><a class="dropdown-item" href="ver_servicios_ordenes.php">Ver servicios</a></li>
+                              
+                        </ul>
+                          </li>
+    
+                          <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Recamaras
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="ver_recamaras.php">Ver Recamaras</a></li>
+                                  <li><a class="dropdown-item" href="recamaras_crear.php">Añadir recamara</a></li>
+                                 
+                            </ul>
+                              </li>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="consulta_factura.php">Facturación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php">Salir</a>
+                </li>
+              </div>
+
+
+    <div class="container">
+        <div class="card-body">
+            <form action="contratacion_recamara_guarda.php" method="POST">
+                <div class="mb-3">
+                    <label for="llegada" class="form-label">Fecha de Llegada</label>
+                    <input type="date" name="llegada" required class="form-control" id="llegada" aria-describedby="llegadaHelp">
+                    <div id="llegadaHelp" class="form-text">Marca la Fecha de Llegada a la Habitación</div>
+                </div>
+                <div class="mb-3">
+                    <label for="salida" class="form-label">Fecha de salida</label>
+                    <input type="date" name="salida" required class="form-control" id="salida"
+                           aria-describedby="salidaHelp">
+                    <div id="salidaHelp" class="form-text">Marca la Fecha de Salida de la Habitación</div>
+                </div>
+                        <div class="mb-3">
+                            <label for="costo" class="form-label">Costo</label>
+                            <input type="text" name="costo" required class="form-control" id="costo" aria-describedby="costoHelp">
+                            <div id="costoHelp" class="form-text">Escribe el costo</div>
+                        </div>
+                <div class="mb-3">
+                    <label for="id_recamara" class="form-label">Id de la recamara</label>
+                    <input type="text" name="id_recamara" required class="form-control" id="id_recamara" aria-describedby="id_recamaraHelp">
+                    <div id="id_recamaraHelp" class="form-text">Id de la recamara asignada</div>
+                </div>
+                <div class="mb-3">
+                    <label for="id_orden" class="form-label">Id de la Orden</label>
+                    <input type="text" name="id_orden" required class="form-control" id="id_orden" aria-describedby="id_ordenHelp">
+                    <div id="id_ordenHelp" class="form-text">Id de la orden donde se realiza el cargo</div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</body>
+<script src="./js/bootstrap.min.js"></script>
+</html>
+
+

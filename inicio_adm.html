@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inicio Huellitas Felices </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+   
+</head>
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      background: url(perrito_fondo13.jpg) no-repeat center top;
+      background-size: cover;
+      font-family: sans-serif;
+      height: 50vh;
+  }
+  </style>
+<body>
+    <div class="container">
+        <div class="navbar navbar-dark bg-dark" >
+            <ul class="nav justify-content-center" .justify-content-end:>  
+                <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Propietarios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="propietarios_crear.php">Crear</a></li>
+                        <li><a class="dropdown-item" href="ver_propietarios.php">Ver propietarios</a></li>
+                        
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Perros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="formulario_perro.php">Crear</a></li>
+                            <li><a class="dropdown-item" href="ver_perros.php">Ver perros</a></li>
+                            
+                            </ul>
+                          </li>
+                        
+                      <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="servicios_crear.php">Añadir servicio</a></li>
+                              <li><a class="dropdown-item" href="ver_servicios_ordenes.php">Ver servicios</a></li>
+                              
+                        </ul>
+                          </li>
+
+                          <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Recamaras
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="ver_recamaras.php">Ver Recamaras</a></li>
+                                  <li><a class="dropdown-item" href="recamaras_crear.php">Añadir recamara</a></li>
+                                 
+                            </ul>
+                              </li>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="consulta_factura.php">Facturación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php">Salir</a>
+                </li>
+              </div>
+                <div class="container">
+
+                <div class="row justify-content-around">
+                  <div class="col-4">
+
+                    <div class="card" style="width: 18rem; height: 35rem; margin-top: 20px;">
+                      <img src="../Huellitas_Felices/Imagenes_Huellitas-Felices/fondo1_estetica.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 align = center class="card-title">Contratación de servicios adicionales</h5>
+                        
+                        <p align = justify  class="card-text">El siguiente formulario permite la asignación de algún servicio adicional que el dueño del perro desee.</p>
+                        <a href="contratacion_servicio.html" class="btn btn-primary">Añadir</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card" style="width: 18rem; height: 35rem; margin-top: 20px;">
+                      <img src="../Huellitas_Felices/recamara perro.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 align = center class="card-title">Asignación de recamaras</h5>
+                        <p  align = justify class="card-text">Este formulario permite reservar una recamara al perro. Se recomienda observar las recamaras disponibles on el objetivo de llevar a cabo una organización de forma correcta. </p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

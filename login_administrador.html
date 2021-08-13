@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/login_administrador.css">
+    <title>Login Administrador</title>
+</head>
+<body> 
+  
+    <div class="login-box">
+        <img src="../Imagenes_Huellitas-Felices/5.1.jpg" class="log" alt="Logo Huellitas_Felices">
+        <h1>Huellitas felices</h1>
+        <form action="../Funciones/login.php" method="POST">
+          <label for="username">Usuario</label>
+          <input type="text" placeholder="Ingresa tu usuario" name="usuario">
+          <label for="password">Contraseña</label>
+          <input type="password" placeholder="Ingresa contraseña" name="contrasena">
+          <input type="submit" value="Ingresar">
+          <a href="#">¿Olvidaste tu contraseña?</a><br>
+          <a href="#">Registrar un nuevo usuario</a>
+        </form>
+      </div>
+</body>
+<script src="./js/bootstrap.min.js"></script>
+</html>
